@@ -4,7 +4,6 @@
 
 > A Bitcoin shared wallet app, designed to rapidly agree and execute group expenses through unanimous voting.
 
-## The idea
 
 
 ## Screenshots
