@@ -3,7 +3,7 @@ export const API = Symbol('API'); //ask what this
 export default baseURL => store => next => action => {
   let token = store.getState().jwt;
   if (action[API] ){
-    console.log(action[API].data);
+    console.log('THIS IS THE ACTION [API]', action[API].body);
     const options = {
       headers:{
         'Content-Type': 'application/json',

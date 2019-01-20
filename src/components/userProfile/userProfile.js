@@ -89,7 +89,7 @@ class UserProfile extends Component {
           <Sider style={{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0 }}>
             <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
               {this.renderSideWallets()}
-              <button onClick={() => this.handleAddWallet()} primary
+              <button onClick={() => this.handleAddWallet()} primary="true"
                 className='addwallet' theme="dark">Add Wallet</button>
             </Menu>
           </Sider>

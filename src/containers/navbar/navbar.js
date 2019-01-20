@@ -45,7 +45,7 @@ class NavBar extends Component {
 
   renderLogin = () => {
     if (this.props.userLogged.username) return (
-      <div cLassName= 'loggedIn-container' >
+      <div className= 'loggedIn-container' >
         <Link className='loggedIn' to='/user'>
           MY WALLETS
         </Link>

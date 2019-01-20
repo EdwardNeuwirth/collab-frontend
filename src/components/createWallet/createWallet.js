@@ -19,10 +19,12 @@ class CreateWallet extends Component {
   handleOnSubmit = (event) => {
     event.preventDefault();
     event.target.reset();
+
     const data = {
       alias: this.state.alias,
       users: this.state.users
     };
+    console.log('THIS IS THE DATA IN createWallet.js', data);
     this.props.fetchCreateWallet(data);
     this.setState({created:true});
     setTimeout(()=> window.location.reload(), 1200);
@@ -127,14 +129,18 @@ CreateWallet.propTypes = {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchCreateWallet: (data) => dispatch ({
-    type: 'FETCH_CREATE_WALLET',
-    [API]: {
-      path: '/wallet',
-      method: 'POST',
-      body: data
-    }
-  })
+  fetchCreateWallet: (data) => {
+    console.log('initMapDispatchToProps: fetchCreateWallet DATA', data);
+    dispatch({
+      type: 'FETCH_CREATE_WALLET',
+      [API]: {
+        path: '/wallet',
+        method: 'POST',
+        body: data
+      }
+    });
+
+  }
 });
 
 export default connect(null, mapDispatchToProps)(CreateWallet);

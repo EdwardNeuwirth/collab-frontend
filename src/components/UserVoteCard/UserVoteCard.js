@@ -12,6 +12,8 @@ class UserVoteCard extends Component {
 
   handleClick = (vote) => {
     this.props.handleVoteOperation(this.props.operation.operation_id, this.props.operation.publicKey, vote);
+    console.log('Accept handleClick public key ', this.props.operation.publicKey);
+    console.log('Vote, ', vote);
     this.setState({voted:true});
   }
 
