@@ -118,12 +118,7 @@ Besides an email notification asking you to vote on everytime a new operation ge
 * [Chart.js](https://github.com/chartjs/Chart.js) - Chart builder on <canvas> elements.
 
 
-## Contributing
-
-Any contribution is welcome, just fork the repository and do your thing. Then submit a pull request pointing to this repo.
-
-
-## Authors
+## Contributors
 
 - Doruk Akpek - [GitHub](https://github.com/dakpek) [LinkedIn](https://www.linkedin.com/in/dakpek/)
 
@@ -133,6 +128,7 @@ Any contribution is welcome, just fork the repository and do your thing. Then su
 
 - Carlos Parera - [GitHub](https://github.com/YourParmenides) [LinkedIn](https://www.linkedin.com/in/carlos-parera-alvarez-844ba3123/)
 
+- Edward Neuwirth
 - Jon Portella - [GitHub](https://github.com/jportella93) [LinkedIn](https://linkedin.com/in/jonportella)
 
 
